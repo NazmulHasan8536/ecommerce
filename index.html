@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/logo/favicon-icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/logo/favicon-icon.png" type="image/x-icon" />
+    <title>Mcare</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/all.min.css" />
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.min.css" />
+    <!-- Style css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <!-- Custom css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom_responsive.css" />
+</head>
+
+<body>
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page Header Start-->
+        <div class="page-header">
+            <div class="header-wrapper row align-items-center m-0 justify-content-between">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="header-logo-wrapper p-0">
+                        <div class="logo" style="width: 150px;">
+                            <img class="img-fluid" src="assets/images/logo/logo.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-6">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <g>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.2753 2.71436C16.0029 2.71436 19.8363 6.54674 19.8363 11.2753C19.8363 16.0039 16.0029 19.8363 11.2753 19.8363C6.54674 19.8363 2.71436 16.0039 2.71436 11.2753C2.71436 6.54674 6.54674 2.71436 11.2753 2.71436Z"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19.8987 18.4878C20.6778 18.4878 21.3092 19.1202 21.3092 19.8983C21.3092 20.6783 20.6778 21.3097 19.8987 21.3097C19.1197 21.3097 18.4873 20.6783 18.4873 19.8983C18.4873 19.1202 19.1197 18.4878 19.8987 18.4878Z"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        <input class="form-control" type="text" placeholder="Search here.." aria-label="search"
+                            aria-describedby="basic-addon1" />
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+                    <div class="nav-right right-header p-0">
+                        <ul class="nav-menus">
+                            <li class="cart-nav">
+                                <div class="toggle-sidebar" onclick="toggleSidebar()">
+                                    <div class="status_toggle sidebar-toggle d-flex">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <g>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M21.0003 6.6738C21.0003 8.7024 19.3551 10.3476 17.3265 10.3476C15.2979 10.3476 13.6536 8.7024 13.6536 6.6738C13.6536 4.6452 15.2979 3 17.3265 3C19.3551 3 21.0003 4.6452 21.0003 6.6738Z"
+                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.3467 6.6738C10.3467 8.7024 8.7024 10.3476 6.6729 10.3476C4.6452 10.3476 3 8.7024 3 6.6738C3 4.6452 4.6452 3 6.6729 3C8.7024 3 10.3467 4.6452 10.3467 6.6738Z"
+                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M21.0003 17.2619C21.0003 19.2905 19.3551 20.9348 17.3265 20.9348C15.2979 20.9348 13.6536 19.2905 13.6536 17.2619C13.6536 15.2333 15.2979 13.5881 17.3265 13.5881C19.3551 13.5881 21.0003 15.2333 21.0003 17.2619Z"
+                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.3467 17.2619C10.3467 19.2905 8.7024 20.9348 6.6729 20.9348C4.6452 20.9348 3 19.2905 3 17.2619C3 15.2333 4.6452 13.5881 6.6729 13.5881C8.7024 13.5881 10.3467 15.2333 10.3467 17.2619Z"
+                                                        stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-nav">
+                                <div class="deliverAddress">
+                                    <div>
+                                        <p class="mb-0">Hello, User</p>
+                                        <p class="mb-0">Mcare Cash: ৳0</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-nav" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <div class="deliverAddress">
+                                    <div>
+                                        <p class="mb-0">Refer</p>
+                                        <p class="mb-0">& Earn</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="cart-nav onhover-dropdown cart-button">
+                                <div class="cart-box">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M5.52377 7C9.41427 5.74386 13.9724 5.45573 16 5.5C18.0276 5.54427 18.8831 6.2663 19.5 7.5C20.5 9.5 20.289 14.4881 18.5 16.0871C16.712 17.6861 9.33015 17.8381 6.87015 16.0871C4.27115 14.2361 5.629 9.192 5.544 5.743C5.595 3.813 3.5 3.5 3.5 3.5"
+                                                    stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M13 10.5H15.773" stroke="#130F26" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M7.26399 20.1274C7.56399 20.1274 7.80799 20.3714 7.80799 20.6714C7.80799 20.9724 7.56399 21.2164 7.26399 21.2164C6.96299 21.2164 6.71899 20.9724 6.71899 20.6714C6.71899 20.3714 6.96299 20.1274 7.26399 20.1274Z"
+                                                    fill="#130F26" stroke="#130F26" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M17.5954 20.1274C17.8964 20.1274 18.1404 20.3714 18.1404 20.6714C18.1404 20.9724 17.8964 21.2164 17.5954 21.2164C17.2954 21.2164 17.0514 20.9724 17.0514 20.6714C17.0514 20.3714 17.2954 20.1274 17.5954 20.1274Z"
+                                                    fill="#130F26" stroke="#130F26" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="badge rounded-pill badge-primary">2</span>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="toggle-sidebar" onclick="toggleSidebar()">
+                    <div class="status_toggle sidebar-toggle d-flex">
+                        <i class="fa-solid fa-bars"></i>
+                        <span>Categories</span>
+                    </div>
+                </div>
+                <div class="call_to_order">
+                    <a class="" href="Tel:01894947373">
+                        <i class="fa-solid fa-phone"></i>
+                        Call To Order
+                    </a>
+                    <a class="" href="#">
+                        <i class="fa-solid fa-heart"></i>
+                        Healthcare Product
+                    </a>
+                </div>
+                <div class="quick_order" data-bs-toggle="modal" data-bs-target="#uploadPrescriptionModal">
+                    <span>To quick order</span>
+                    <span class="">
+                        <i class="fa-solid fa-file-prescription"></i>
+                        Upload Prescription
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Ends-->
+
+        <!-- Page Body Start-->
+        <div class="page-body-wrapper">
+            <!-- Page Sidebar Start-->
+            <div id="sidebar-wrapper" class="sidebar-wrapper">
+                <nav class="sidebar-main">
+                    <div id="sidebar-menu">
+                        <ul class="sidebar-links" id="simple-bar">
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-virus-covid"></i>
+                                    <span>Covid-19 Special</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-venus"></i>
+                                    <span>Women Care</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-laptop-medical"></i>
+                                    <span>Devices</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-staff-aesculapius"></i>
+                                    <span>Sexual Wellness</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-mortar-pestle"></i>
+                                    <span>Herbal and Homeopathy</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-person-breastfeeding"></i>
+                                    <span>Baby & Mom care</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-mug-saucer"></i>
+                                    <span>Nutrition and drinks</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Page Sidebar Ends-->
+
+            <div class="page-body">
+                <!-- category Start -->
+                <div id="category">
+                    <div class="container-fluid category-slider">
+                        <div class="category-arrow">
+                            <a class="right" rel="alternate" href="#" hreflang="en-BD">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                            <a class="left" rel="alternate" href="#" hreflang="en-BD">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="row category-slider-row">
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/covid19.png"
+                                        alt="Covid-19 Special" title="Covid-19 Special" />
+                                    <p class="category-item-title">Covid-19 Special</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/women.png" alt="Women Care"
+                                        title="Women Care" />
+                                    <p class="category-item-title">Women Care</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/medical_devices.png"
+                                        alt="Devices" title="Devices" />
+                                    <p class="category-item-title">Devices</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/sexual.png"
+                                        alt="Sexual Wellness" title="Sexual Wellness" />
+                                    <p class="category-item-title">Sexual Wellness</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/harbal.png"
+                                        alt="Herbal and Homeopathy" title="Herbal and Homeopathy" />
+                                    <p class="category-item-title">Herbal and Homeopathy</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/baby&mom.png"
+                                        alt="Baby & Mom care" title="Baby & Mom care" />
+                                    <p class="category-item-title">Baby & Mom care</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/energy-drink.png"
+                                        alt="Nutrition and drinks" title="Nutrition and drinks" />
+                                    <p class="category-item-title">Nutrition and drinks</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- category End -->
+                <!-- Container-fluid starts-->
+                <div class="container-fluid default-dash">
+                    <!-- Banner Slider Start -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/images/banner/01.webp" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/banner/02.webp" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/banner/03.webp" class="d-block w-100" alt="..." />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!-- Banner Slider End -->
+
+                    <!--Ads Section Start -->
+                    <section class="adbanner">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="ad">
+                                    <a href="#"></a>
+                                    <img class="w-100" src="assets/images/adbanners/healthcare.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ad">
+                                    <a href="#"></a>
+                                    <img class="w-100" src="assets/images/adbanners/cto.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ad">
+                                    <a href="#"></a>
+                                    <img class="w-100" src="assets/images/adbanners/upload-prescription.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Ads Banner End -->
+
+                    <!--Instruction Section Start -->
+                    <section class="instruction">
+                        <div class="card shadow-sm">
+                            <div class="card-body p-2">
+                                <div class="instructions">
+
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-md-8">
+                                            <h1>MCARE থেকে অর্ডার কিভাবে করবেন?</h1>
+                                            <ul>
+                                                <li><span>১</span> প্রেস্ক্রিপশনের ছবি আপলোড করুন অথবা ঔষধ সার্চ করে
+                                                    কিনুন।</li>
+                                                <li><span>২</span> আমাদের 'A Grade Pharmacist' আপনাকে ফোন করে অর্ডার
+                                                    কনফার্ম করবেন।</li>
+                                                <li><span>৩</span> ১৮-৪৮ ঘন্টার মধ্য আপনার ডেলিভারি বুঝে নিন।</li>
+                                            </ul>
+
+                                            <p>ডাউনলোড করুন MCARE এপ, আর উপভোগ করুন আকর্ষণীয় মূল্যছাড়।</p>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="ins_video">
+                                                <img class="w-100" src="assets/images/video/video_bg1.png" alt="">
+                                                <!-- <div class="video-play-button"><img
+                                                        src="https://cdn6.arogga.com/img/video-play-icon.png"
+                                                        alt="video play" width="60" height="auto" style="z-index: 1;">
+                                                </div> -->
+
+                                                <a href="#"><i class="fa-solid fa-play"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Instruction Section End -->
+
+
+                    <!--Product Banner Start -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sectionHeading">
+                                <h3>Covid-19 Special</h3>
+                                <button class="btn btn-primary">View All</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row product_slider">
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzRcLzM0MzQ2LUNsdW5nZW5lLUNvdmlkLVJhcGlkLUFudGlnZW4tVGVzdC1LaXQtU0FSUy1Db1YtMi0xMzJkLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5NjcxLURldHRvbC1JbnN0YW50LUhhbmQtU2FuaXRpemVyLU9yaWdpbmFsLXU4bzguanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjdcLzI3NTk3LVRoZXJtb21ldGVyLURpZ2l0YWwtTENELWNrOTUuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzFcLzMxMjgyLUp1bXBlci1KUEQtNTAwRC1PTEVELVZlcnNpb24tRmluZ2VydGlwLVB1bHNlLU94aW1ldGVyLUNFLUZEQS1BcHByb3ZlZC13OW44LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5MzMzLUhvcmxpY2tzLVN0YW5kYXJkLUphci00NnBrLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sectionHeading">
+                                <h3>HERBAL AND HOMEOPATHY</h3>
+                                <button class="btn btn-primary">View All</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row product_slider">
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzRcLzM0MzQ2LUNsdW5nZW5lLUNvdmlkLVJhcGlkLUFudGlnZW4tVGVzdC1LaXQtU0FSUy1Db1YtMi0xMzJkLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5NjcxLURldHRvbC1JbnN0YW50LUhhbmQtU2FuaXRpemVyLU9yaWdpbmFsLXU4bzguanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjdcLzI3NTk3LVRoZXJtb21ldGVyLURpZ2l0YWwtTENELWNrOTUuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzFcLzMxMjgyLUp1bXBlci1KUEQtNTAwRC1PTEVELVZlcnNpb24tRmluZ2VydGlwLVB1bHNlLU94aW1ldGVyLUNFLUZEQS1BcHByb3ZlZC13OW44LmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjIwMCwiaGVpZ2h0IjoyMDAsImZpdCI6Im91dHNpZGUifX19"
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5MzMzLUhvcmxpY2tzLVN0YW5kYXJkLUphci00NnBrLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="productCard">
+                                <div class="productImage">
+                                    <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMjlcLzI5NjcxLURldHRvbC1JbnN0YW50LUhhbmQtU2FuaXRpemVyLU9yaWdpbmFsLXU4bzguanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwiZml0Ijoib3V0c2lkZSJ9fX0="
+                                        class="productCard-img-top w-100" alt="..." />
+                                </div>
+                                <div class="productCard-body">
+                                    <div class="productDetails">
+                                        <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                        <div class="ProductDiscount">
+                                            <span class="productDiscountPrice">৳ 120.00</span>
+                                            <span class="discountPercent jss229">15% Off</span>
+                                        </div>
+                                        <p class="ProductPrice">৳ 12.00</p>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Product Banner End -->
+                </div>
+
+                <!-- Login Modal -->
+                <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Please login first</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Phone number</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Enter Phone Number" value="+880">
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="" role="presentation">
+                                        <button class="btn btn-link p-0" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">Have a referral
+                                            code?</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content p-0 m-0" id="pills-tabContent">
+                                    <div class="tab-pane fade" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <input type="text" class="form-control" id="referral_code" placeholder="Enter Referral
+                                            Code">
+
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <!-- <button type="button" class="btn btn-link p-0">Have a referral code?</button> -->
+                                <button type="button" class="btn btn-primary">Send</button>
+
+                                <p>By continuing you agree to <a href="#">Terms & Conditions</a>, <a href="#">Privacy
+                                        Policy</a> & <a href="#">Refund-Return Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="uploadPrescriptionModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="uploadPrescriptionModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="uploadPrescriptionModalLabel">Upload Prescriptions</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne"
+                                                style="font-size:14px; padding: 10px; margin-bottom: 10px;">
+                                                কেন প্রেসক্রিপশনের ছবি আপলোড করবেন?
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <ul style="line-height: 30px; list-style: disc;">
+                                                    <li style="line-height: 1.6; font-size:12px; margin-bottom:10px;">
+                                                        প্রেসক্রিপশন হারানোর ভয় থেকে আপনি মুক্ত, আজীবনের জন্য MCARE এপে
+                                                        আপনি খুজে পাবেন আপনার ডিজিটাল প্রেসক্রিপশন।</li>
+                                                    <li style="line-height: 1.6; font-size:12px; margin-bottom:10px;">
+                                                        ডাক্তারের হাতের লেখা বুঝা না গেলেও কোন সমস্যা নেই, আমাদের 'A'
+                                                        গ্রেড ফার্মাসিস্ট প্রেস্ক্রিপশন দেখে ঔষধ অর্ডারে আপনাকে সহযোগিতা
+                                                        করবে।</li>
+                                                    <li style="line-height: 1.6; font-size:12px; margin-bottom:10px;">
+                                                        আপনার প্রেসক্রিপশন কখনো তৃতীয় কোন পক্ষের সাথে শেয়ার করা হবে না।
+                                                    </li>
+                                                    <li style="line-height: 1.6; font-size:12px; margin-bottom:10px;">
+                                                        বাংলাদেশ সরকারের নিয়ম অনুসারে, কিছু মেডিসিন অর্ডার করার জন্য
+                                                        প্রেসক্রিপশন থাকা বাধ্যতামুলক।</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-link p-0 " type="button">Valid prescription guide</button>
+
+
+                                <img class="w-100" src="assets/images/drag&drop.png" alt="">
+
+
+                                <div class="accordion accordion-flush mt-3" id="prescriptionGuide">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo"
+                                                style="font-size:14px; padding: 10px; margin-bottom: 10px;">
+                                                Valid prescription guide
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#prescriptionGuide">
+                                            <div class="accordion-body">
+                                                <img class="w-100" src="assets/images/prescriptionImage.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="modal-footer justify-content-between">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="" role="presentation">
+                                        <button class="btn btn-link p-0" type="button">Valid prescription guide</button>
+                                    </li>
+                                </ul>
+                                <!-- <button type="button" class="btn btn-link p-0">Have a referral code?</button> -->
+                                <button type="button" class="btn btn-primary">Upload Prescription</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="" id="main-nav"> -->
+    <a class="cart-button cart-button-style" href="#">
+        <div class="bag-count">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>3 Items</span>
+        </div>
+        <span class="bag-label">৳ 71000.00</span>
+    </a>
+    <!-- </div> -->
+
+    <aside id="sidebar-cart">
+        <main>
+            <a href="#" class="close-button"><span class="close-icon">X</span></a>
+            <h2>Shopping Bag <span class="count">2</span></h2>
+            <ul class="products">
+                <li class="product">
+                    <a href="#" class="cartProductLink">
+                        <span class="product-image">
+                            <img src="assets/images/checkout/01.webp" alt="Product Photo" />
+                        </span>
+                        <span class="product-details">
+                            <h3>Very Cool Product One</h3>
+                            <span class="qty-price">
+                                <span class="qty">
+                                    <button class="minus-button" id="minus-button-1">-</button>
+                                    <input type="number" id="qty-input-1" class="qty-input" step="1" min="1" max="1000"
+                                        name="qty-input" value="1" pattern="[0-9]*" title="Quantity"
+                                        inputmode="numeric" />
+                                    <button class="plus-button" id="plus-button-1">+</button>
+                                    <input type="hidden" name="item-price" id="item-price-1" value="12.00" />
+                                </span>
+                                <span class="price">৳ 16.00</span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+                </li>
+
+                <li class="product">
+                    <a href="#" class="cartProductLink">
+                        <span class="product-image">
+                            <img src="assets/images/checkout/02.webp" alt="Product Photo" />
+                        </span>
+                        <span class="product-details">
+                            <h3>Very Cool Product Two...</h3>
+                            <span class="qty-price">
+                                <span class="qty">
+                                    <button class="minus-button" id="minus-button-1">-</button>
+                                    <input type="number" id="qty-input-2" class="qty-input" step="1" min="1" max="1000"
+                                        name="qty-input" value="1" pattern="[0-9]*" title="Quantity"
+                                        inputmode="numeric" />
+                                    <button class="plus-button" id="plus-button-1">+</button>
+                                    <input type="hidden" name="item-price" id="item-price-2" value="12.00" />
+                                </span>
+                                <span class="price">৳ 28.00</span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+                </li>
+
+                <li class="product">
+                    <a href="#" class="cartProductLink">
+                        <span class="product-image">
+                            <img src="assets/images/checkout/03.webp" alt="Product Photo" />
+                        </span>
+                        <span class="product-details">
+                            <h3>Very Cool Product Three</h3>
+                            <span class="qty-price">
+                                <span class="qty">
+                                    <form action="#" name="qty-form" id="qty-form-1">
+                                        <button class="minus-button" id="minus-button-1">-</button>
+                                        <input type="number" id="qty-input-3" class="qty-input" step="1" min="1"
+                                            max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity"
+                                            inputmode="numeric" />
+                                        <button class="plus-button" id="plus-button-1">+</button>
+                                        <input type="hidden" name="item-price" id="item-price-3" value="12.00" />
+                                    </form>
+                                </span>
+                                <span class="price">৳ 12.00</span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+                </li>
+            </ul>
+
+
+
+
+
+
+            <div class="other-items-in-cart">
+                <div class="coupon">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="" role="presentation">
+                            <button class="btn btn-link p-0" id="pills-cartCoupon-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-cartCoupon" type="button" role="tab"
+                                aria-controls="pills-cartCoupon" aria-selected="true">Have a coupon code?</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-0 m-0" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-cartCoupon" role="tabpanel"
+                            aria-labelledby="pills-cartCoupon-tab">
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter coupon Code">
+                                <button class="btn btn-primary" type="button" id="button-addon2">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="headline">
+                    <div class="savingTakaHighlights">
+                        <div class="savingTakaHighlight">
+                            <img src="https://cdn6.arogga.com/img/taka.png" alt="saving">
+                            <span>
+                                You are saving <strong>৳ 772.3</strong>
+                                in this order.
+                            </span>
+                        </div>
+
+                        <div class="savingTakaHighlight">
+                            <img src="https://cdn6.arogga.com/img/taka.png" alt="receive cashback">
+                            <span>
+                                You will receive <strong>৳ 20</strong>
+                                cashback for this order after delivery.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="totals">
+                <div class="subtotal">
+                    <span class="amountLabel">Subtotal:</span>
+                    <span class="amount">৳ 54.00</span>
+                </div>
+                <div class="shipping">
+                    <span class="amountLabel">Shipping:</span>
+                    <span class="amount">৳ 7.95</span>
+                </div>
+                <div class="tax">
+                    <span class="amountLabel">Tax:</span>
+                    <span class="amount">৳ 71.95</span>
+                </div>
+                <div class="amountPayable">
+                    <span class="amountLabel">Amont Payable:</span>
+                    <span class="amount">৳ 71.95</span>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <a class="checkout-button btn-primary" href="#">Proceed to checkout</a>
+            </div>
+        </main>
+    </aside>
+
+
+
+
+
+    <!-- footer start-->
+    <footer class="footer">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <img class="w-50" src="./assets/images/logo/logo_dark.png" alt="" />
+
+                    <p>
+                        MCARE is an online healthcare platform, established by professionals with over 10 years
+                        experience in the field of education, training, IT business with local & global companies,
+                        providing an affordable,
+                        hassle-free experience for all your health needs.
+                    </p>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Return and Refund Policy</a></li>
+                    </ul>
+                    <h3 class="footer_header mt-3">Social Links</h3>
+                    <ul class="social-link">
+                        <li class="twitter">
+                            <a href="https://twitter.com/mcareonline" data-toggle="tooltip" target="_blank" title=""
+                                data-original-title="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://www.linkedin.com/company/mcareonline" data-toggle="tooltip" target="_blank"
+                                title="" data-original-title="Linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/McareOnline" data-toggle="tooltip" target="_blank"
+                                title="" data-original-title="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/channel/UCy04iMG9zqelk0sAUfpRknw" data-toggle="tooltip"
+                                target="_blank" title="" data-original-title="Youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com/mcare_online/" data-toggle="tooltip" target="_blank"
+                                title="" data-original-title="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">USEFUL LINKS</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Medicines</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">CONTACT US</h3>
+                    <ul>
+                        <li>
+                            <a href="#"> <strong>ADDRESS:</strong> Wasi Tower(13th Floor), 572/K, ECB Chattar, Matikata,
+                                Dhaka Cantonment, Dhaka-1206, Bangladesh</a>
+                        </li>
+                        <li>
+                            <a href="#"> <strong>PHONE: </strong> +880 18949 47373</a>
+                        </li>
+                        <li>
+                            <a href="#"> <strong>EMAIL: </strong> support@mcare.com.bd</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="row">
+                <div class="col-md-12 footer-copyright text-center">
+                    <p class="mb-0">Copyright 2022 © MCARE</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap js-->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        function toggleSidebar() {
+            var element = document.getElementById("sidebar-wrapper");
+            element.classList.toggle("close_icon");
+        }
+
+        if (window.innerWidth < 991) {
+            const initialAddedClass = document.getElementById("sidebar-wrapper");
+            initialAddedClass.classList.add("close_icon");
+        }
+
+
+
+
+
+
+        $(document).ready(function ($) {
+            // Declare the body variable
+            var $body = $("body");
+
+            // Function that shows and hides the sidebar cart
+            $(".cart-button, .close-button").click(function (e) {
+                e.preventDefault();
+
+                // Add the show-sidebar-cart class to the body tag
+                $body.toggleClass("show-sidebar-cart");
+            });
+
+            // Function that adds or subtracts quantity when a 
+            // plus or minus button is clicked
+            $body.on('click', '.plus-button, .minus-button', function () {
+                // Get quanitity input values
+                var qty = $(this).closest('.qty').find('.qty-input');
+                var val = parseFloat(qty.val());
+                var max = parseFloat(qty.attr('max'));
+                var min = parseFloat(qty.attr('min'));
+                var step = parseFloat(qty.attr('step'));
+
+                // Check which button is clicked
+                if ($(this).is('.plus-button')) {
+                    // Increase the value
+                    qty.val(val + step);
+                } else {
+                    // Check if minimum button is clicked and that value is 
+                    // >= to the minimum required
+                    if (min && min >= val) {
+                        // Do nothing because value is the minimum required
+                        qty.val(min);
+                    } else if (val > 0) {
+                        // Subtract the value
+                        qty.val(val - step);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

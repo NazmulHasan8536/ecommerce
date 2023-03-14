@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/logo/favicon-icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/logo/favicon-icon.png" type="image/x-icon" />
+    <title>Mcare</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/all.min.css" />
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.min.css" />
+    <!-- Style css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <!-- Custom css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom_responsive.css" />
+</head>
+
+<body>
+    <!-- tap on tap ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page Header Start-->
+        <div class="page-header">
+            <div class="header-wrapper row align-items-center m-0 justify-content-between">
+                <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="header-logo-wrapper p-0">
+                        <div class="logo" style="width: 150px;">
+                            <img class="img-fluid" src="assets/images/logo/logo.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5 col-xl-6">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <g>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2753 2.71436C16.0029 2.71436 19.8363 6.54674 19.8363 11.2753C19.8363 16.0039 16.0029 19.8363 11.2753 19.8363C6.54674 19.8363 2.71436 16.0039 2.71436 11.2753C2.71436 6.54674 6.54674 2.71436 11.2753 2.71436Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.8987 18.4878C20.6778 18.4878 21.3092 19.1202 21.3092 19.8983C21.3092 20.6783 20.6778 21.3097 19.8987 21.3097C19.1197 21.3097 18.4873 20.6783 18.4873 19.8983C18.4873 19.1202 19.1197 18.4878 19.8987 18.4878Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        <input class="form-control" type="text" placeholder="Search here.." aria-label="search" aria-describedby="basic-addon1" />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+                    <div class="nav-right right-header p-0">
+                        <ul class="nav-menus">
+                            <li class="cart-nav">
+                                <div class="toggle-sidebar" onclick="toggleSidebar()">
+                                    <div class="status_toggle sidebar-toggle d-flex">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g>
+                                                <g>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0003 6.6738C21.0003 8.7024 19.3551 10.3476 17.3265 10.3476C15.2979 10.3476 13.6536 8.7024 13.6536 6.6738C13.6536 4.6452 15.2979 3 17.3265 3C19.3551 3 21.0003 4.6452 21.0003 6.6738Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3467 6.6738C10.3467 8.7024 8.7024 10.3476 6.6729 10.3476C4.6452 10.3476 3 8.7024 3 6.6738C3 4.6452 4.6452 3 6.6729 3C8.7024 3 10.3467 4.6452 10.3467 6.6738Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.0003 17.2619C21.0003 19.2905 19.3551 20.9348 17.3265 20.9348C15.2979 20.9348 13.6536 19.2905 13.6536 17.2619C13.6536 15.2333 15.2979 13.5881 17.3265 13.5881C19.3551 13.5881 21.0003 15.2333 21.0003 17.2619Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3467 17.2619C10.3467 19.2905 8.7024 20.9348 6.6729 20.9348C4.6452 20.9348 3 19.2905 3 17.2619C3 15.2333 4.6452 13.5881 6.6729 13.5881C8.7024 13.5881 10.3467 15.2333 10.3467 17.2619Z" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-nav">
+                                <div class="deliverAddress">
+                                    <div>
+                                        <p class="mb-0">Hello, User</p>
+                                        <p class="mb-0">Mcare Cash: ৳0</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-nav">
+                                <div class="deliverAddress">
+                                    <div>
+                                        <p class="mb-0">Refer</p>
+                                        <p class="mb-0">& Earn</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-nav onhover-dropdown">
+                                <div class="cart-box">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <path d="M5.52377 7C9.41427 5.74386 13.9724 5.45573 16 5.5C18.0276 5.54427 18.8831 6.2663 19.5 7.5C20.5 9.5 20.289 14.4881 18.5 16.0871C16.712 17.6861 9.33015 17.8381 6.87015 16.0871C4.27115 14.2361 5.629 9.192 5.544 5.743C5.595 3.813 3.5 3.5 3.5 3.5" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M13 10.5H15.773" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26399 20.1274C7.56399 20.1274 7.80799 20.3714 7.80799 20.6714C7.80799 20.9724 7.56399 21.2164 7.26399 21.2164C6.96299 21.2164 6.71899 20.9724 6.71899 20.6714C6.71899 20.3714 6.96299 20.1274 7.26399 20.1274Z" fill="#130F26" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5954 20.1274C17.8964 20.1274 18.1404 20.3714 18.1404 20.6714C18.1404 20.9724 17.8964 21.2164 17.5954 21.2164C17.2954 21.2164 17.0514 20.9724 17.0514 20.6714C17.0514 20.3714 17.2954 20.1274 17.5954 20.1274Z" fill="#130F26" stroke="#130F26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="badge rounded-pill badge-primary">2</span>
+                                </div>
+                                <div class="cart-dropdown onhover-show-div">
+                                    <div class="dropdown-title">
+                                        <h3>Cart</h3>
+                                        <a class="f-right" href="#">
+                                            <i class="fa-solid fa-cart-plus"></i>
+                                        </a>
+                                    </div>
+                                    <ul class="custom-scrollbar">
+                                        <li>
+                                            <div class="media">
+                                                <img class="img-fluid b-r-5 me-3 img-50" src="assets/images/banner-1.jpg" alt="" />
+                                                <div class="media-body">
+                                                    <h5><a href="product.html">Black shirt with jecket</a></h5>
+                                                    <p class="f-w-700">$500</p>
+                                                    <div class="cart-quantity">
+                                                        <span class="plus"><i class="fa fa-plus"></i></span> <input class="count" type="text" name="qty" value="3" /><span class="minus"><i class="fa fa-minus"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="close-circle">
+                                                    <a href="#">
+                                                        <i class="me-1" data-feather="edit"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i data-feather="trash-2"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="img-fluid b-r-5 me-3 img-50" src="assets/images/product-4.png" alt="" />
+                                                <div class="media-body">
+                                                    <h5><a href="product.html">Yellow white shirt.</a></h5>
+                                                    <p class="f-w-700">$500</p>
+                                                    <div class="cart-quantity">
+                                                        <span class="plus"><i class="fa fa-plus"></i></span> <input class="count" type="text" name="qty" value="3" /><span class="minus"><i class="fa fa-minus"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="close-circle">
+                                                    <a href="#"><i class="me-1" data-feather="edit"></i></a><a href="#"><i data-feather="trash-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="img-fluid b-r-5 me-3 img-50" src="assets/images/product-6.jpg" alt="" />
+                                                <div class="media-body">
+                                                    <h5><a href="product.html">Nike Black shoes !</a></h5>
+                                                    <p class="f-w-700">$500</p>
+                                                    <div class="cart-quantity">
+                                                        <span class="plus"><i class="fa fa-plus"></i></span> <input class="count" type="text" name="qty" value="3" /><span class="minus"><i class="fa fa-minus"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="close-circle">
+                                                    <a href="#"><i class="me-1" data-feather="edit"></i></a><a href="#"><i data-feather="trash-2"></i></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="order-total">
+                                            <h4 class="mb-0 f-w-700">Total : <span>$100.00</span></h4>
+                                            <a class="btn btn-primary view-checkout" href="checkout.html">Checkout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="toggle-sidebar" onclick="toggleSidebar()">
+                    <div class="status_toggle sidebar-toggle d-flex">
+                        <i class="fa-solid fa-bars"></i>
+                        <span>Categories</span>
+                    </div>
+                </div>
+                <div class="call_to_order">
+                    <a class="" href="Tel:01894947373">
+                        <i class="fa-solid fa-phone"></i>
+                        Call To Order
+                    </a>
+                    <a class="" href="#">
+                        <i class="fa-solid fa-heart"></i>
+                        Healthcare Product
+                    </a>
+                </div>
+                <div class="quick_order">
+                    <span>To quick order</span>
+                    <span class="">
+                        <i class="fa-solid fa-file-prescription"></i>
+                        Upload Prescription
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Ends-->
+        <!-- Page Body Start-->
+        <div class="page-body-wrapper">
+            <!-- Page Sidebar Start-->
+            <div id="sidebar-wrapper" class="sidebar-wrapper">
+                <nav class="sidebar-main">
+                    <div id="sidebar-menu">
+                        <ul class="sidebar-links" id="simple-bar">
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-virus-covid"></i>
+                                    <span>Covid-19 Special</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-venus"></i>
+                                    <span>Women Care</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-laptop-medical"></i>
+                                    <span>Devices</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-staff-aesculapius"></i>
+                                    <span>Sexual Wellness</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-mortar-pestle"></i>
+                                    <span>Herbal and Homeopathy</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-person-breastfeeding"></i>
+                                    <span>Baby & Mom care</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-mug-saucer"></i>
+                                    <span>Nutrition and drinks</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Page Sidebar Ends-->
+            <div class="page-body">
+                <!-- Container-fluid starts-->
+                <div class="container-fluid default-dash">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-md-4">
+                                            <div class="product-img-box">
+                                                <div class="img-display">
+                                                    <div class="img-showcase">
+                                                        <img src="assets/images/product-image/image1.webp" class="img-fluid" alt="" />
+                                                        <img src="assets/images/product-image/image2.webp" class="img-fluid" alt="" />
+                                                        <img src="assets/images/product-image/image3.webp" class="img-fluid" alt="" />
+                                                        <img src="assets/images/product-image/image4.webp" class="img-fluid" alt="" />
+                                                        <img src="assets/images/product-image/image5.webp" class="img-fluid" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="img-select">
+                                                    <div class="img-item">
+                                                        <a href="#" data-id="1">
+                                                            <img src="assets/images/product-image/image1.webp" alt="" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="img-item">
+                                                        <a href="#" data-id="2">
+                                                            <img src="assets/images/product-image/image2.webp" alt="" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="img-item">
+                                                        <a href="#" data-id="3">
+                                                            <img src="assets/images/product-image/image3.webp" alt="" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="img-item">
+                                                        <a href="#" data-id="4">
+                                                            <img src="assets/images/product-image/image4.webp" alt="" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="img-item">
+                                                        <a href="#" data-id="5">
+                                                            <img src="assets/images/product-image/image5.webp" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="product-content">
+                                                <h2 class="product-title">Accu Chek Active Blood Glucometer</h2>
+                                                <h6 class="product-type">Blood Glucose Meter</h6>
+                                                <a href="#">
+                                                    <h6 class="product-company">Novartis (Bangladesh) Ltd.</h6>
+                                                </a>
+                                                <div class="product-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                    <span>4.7(21)</span>
+                                                </div>
+                                                <div class="product-price-box">
+                                                    <div class="recently_view">
+                                                        <img src="assets/images/recently_bought.png" width="16" height="16" alt="recently view" />
+                                                        <span>28625 people recently viewed this.</span>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <p class="new-price">Best Price: <span>৳2300.00 </span></p>
+                                                        <p class="last-price">MRP: <span>৳2395.00</span><strong class="discount_off">(Get 4% Off)</strong></p>
+                                                    </div>
+                                                </div>
+                                                <div class="quantity">
+                                                    <button class="btn minus-btn disabled" type="button"><i class="fas fa-minus"></i></button>
+                                                    <input type="text" id="quantity" value="1" />
+                                                    <button class="btn plus-btn" type="button"><i class="fas fa-plus"></i></button>
+                                                </div>
+                                                <div class="quantity2">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Select</option>
+                                                        <option value="1">1 * 1's Pack</option>
+                                                        <option value="2">2 * 1's Pack</option>
+                                                        <option value="3">3 * 1's Pack</option>
+                                                        <option value="4">4 * 1's Pack</option>
+                                                        <option value="5">5 * 1's Pack</option>
+                                                        <option value="6">6 * 1's Pack</option>
+                                                        <option value="7">7 * 1's Pack</option>
+                                                    </select>
+                                                </div>
+                                                <div class="add-to-cart">
+                                                    <button type="button" class="btn_cart">Add to Cart <i class="fas fa-shopping-cart"></i></button>
+                                                    <button type="button" class="btn_buy">Buy it now</button>
+                                                </div>
+                                                <div class="additional_info">
+                                                    <div class="additional-title">
+                                                        <span class="addition_heading">Additional Offers</span>
+                                                        <span id="showAll"><button class="show-btn border-0" type="button" onclick="showAll();">Show All</button></span>
+                                                        <span id="showless"><button class="show-btn border-0" type="button" onclick="showLess();">Show less</button></span>
+                                                    </div>
+                                                    <ul>
+                                                        <li><i class="far fa-check-circle"></i><strong>Cashback ৳100 : </strong><span>For purchasing above ৳5000+</span></li>
+                                                        <li><i class="far fa-check-circle"></i><strong>Cashback ৳80 : </strong><span>For purchasing above ৳4000+</span></li>
+                                                        <li><i class="far fa-check-circle"></i><strong>Cashback ৳60 : </strong><span>For purchasing above ৳3000+</span></li>
+                                                        <li id="lOne"><i class="far fa-check-circle"></i><strong>Cashback ৳40 : </strong><span>For purchasing above ৳2000+</span></li>
+                                                        <li id="lTwo"><i class="far fa-check-circle"></i><strong>Cashback ৳20 : </strong><span>For purchasing above ৳1000+</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="single-product-view">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-10 col-md-9">
+                                <div class="card">
+                                    <div class="card-body p-2">
+                                        <!--Product Details and Customer Reviews Part start-->
+                                        <!--
+                                      |--------------------------------------------------------------------------
+                                      | Product Details Start
+                                      |--------------------------------------------------------------------------
+                                    -->
+                                        <div class="product-details">
+                                            <h4>Description</h4>
+                                            <ul>
+                                                <li>Easy to use: Accu-Chek Active blood glucose meter packs many powerful features into a smaller size</li>
+                                                <li>The number of saved readings shown is upto 500 tests</li>
+                                                <li>Accu-Chek Active blood glucose meter is easy and convenient to use as it doesn’t require any code chip for coding the meter</li>
+                                                <li>Two-button intuitive handling: With only two buttons to operate, Accu-Chek Active is an easy-to-handle device</li>
+                                                <li>The glucometer allows to double-check the displayed result and match colour code to assure results accuracy</li>
+                                                <li>The glucose meter has a built-in USB port for transferring saved test results to a computer which is equipped accordingly</li>
+                                            </ul>
+                                        </div>
+                                        <!--
+                                      |--------------------------------------------------------------------------
+                                      | Product Details End
+                                      |--------------------------------------------------------------------------
+                                    -->
+                                        <!--
+                                      |--------------------------------------------------------------------------
+                                      | Customer Reviews Summary Start
+                                      |--------------------------------------------------------------------------
+                                    -->
+                                        <div class="product-review-summary">
+                                            <h2>Customer Reviews</h2>
+                                            <div class="customer-review-summary">
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star nocolor"></i></span>
+                                                <span class="summary-result">4 out of 5</span>
+                                            </div>
+                                            <div class="rating-result">56 ratings</div>
+                                            <div class="rating-proggress">
+                                                <!--Rating Item-->
+                                                <div class="rating-item">
+                                                    <div class="star">5 star</div>
+                                                    <div class="proggressbar">
+                                                        <span class="proggressbar-percent" style="width: 77%;"></span>
+                                                    </div>
+                                                    <div class="percent">77%</div>
+                                                </div>
+                                                <!--Rating Item-->
+                                                <div class="rating-item">
+                                                    <div class="star">4 star</div>
+                                                    <div class="proggressbar">
+                                                        <span class="proggressbar-percent" style="width: 15%;"></span>
+                                                    </div>
+                                                    <div class="percent">15%</div>
+                                                </div>
+                                                <!--Rating Item-->
+                                                <div class="rating-item">
+                                                    <div class="star">3 star</div>
+                                                    <div class="proggressbar">
+                                                        <span class="proggressbar-percent" style="width: 6%;"></span>
+                                                    </div>
+                                                    <div class="percent">6%</div>
+                                                </div>
+                                                <!--Rating Item-->
+                                                <div class="rating-item">
+                                                    <div class="star">2 star</div>
+                                                    <div class="proggressbar">
+                                                        <span class="proggressbar-percent" style="width: 2%;"></span>
+                                                    </div>
+                                                    <div class="percent">2%</div>
+                                                </div>
+                                                <!--Rating Item-->
+                                                <div class="rating-item">
+                                                    <div class="star">1 star</div>
+                                                    <div class="proggressbar">
+                                                        <span class="proggressbar-percent" style="width: 0%;"></span>
+                                                    </div>
+                                                    <div class="percent">0%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--
+                                      |--------------------------------------------------------------------------
+                                      | Customer Reviews Summary End
+                                      |--------------------------------------------------------------------------
+                                    -->
+                                        <!--
+                                      |--------------------------------------------------------------------------
+                                      | Customer Reviews Message Start
+                                      |--------------------------------------------------------------------------
+                                    -->
+                                        <div class="customer-review-message px-2">
+                                            <!--Review Message Item-->
+                                            <div class="review-message-item">
+                                                <div class="customer-review-summary">
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span class="pl-2">by</span>
+                                                    <span class="customer-name">Hossain ahmed</span>
+                                                </div>
+                                                <div class="customer-message">
+                                                    <p>
+                                                        I bought this on Prime day to replace an android tablet. Wanted something a little more capable, yet portable. I installed several Linux distros without a hitch. Settled on Mint
+                                                        19. It's rock stable and runs smooth as butter. I added a 200gb micro sd for data storage and have a 2 tb slim USB HD
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!--Review Message Item-->
+                                            <div class="review-message-item">
+                                                <div class="customer-review-summary">
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star nocolor"></i></span>
+                                                    <span class="pl-2">by</span>
+                                                    <span class="customer-name">Hossain ahmed</span>
+                                                </div>
+                                                <div class="customer-message">
+                                                    <p>
+                                                        I bought this on Prime day to replace an android tablet. Wanted something a little more capable, yet portable. I installed several Linux distros without a hitch. Settled on Mint
+                                                        19. It's rock stable and runs smooth as butter. I added a 200gb micro sd for data storage and have a 2 tb slim USB HD
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!--Review Message Item-->
+                                            <div class="review-message-item">
+                                                <div class="customer-review-summary">
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span><i class="fa fa-star"></i></span>
+                                                    <span class="pl-2">by </span>
+                                                    <span class="customer-name">Hossain ahmed</span>
+                                                </div>
+                                                <div class="customer-message">
+                                                    <p>
+                                                        I bought this on Prime day to replace an android tablet. Wanted something a little more capable, yet portable. I installed several Linux distros without a hitch. Settled on Mint
+                                                        19. It's rock stable and runs smooth as butter. I added a 200gb micro sd for data storage and have a 2 tb slim USB HD
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <!--Review Message Item-->
+                                        </div>
+                                        <!--
+                                      |--------------------------------------------------------------------------
+                                      | Customer Reviews Message End
+                                      |--------------------------------------------------------------------------
+                                    -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Product Details and Customer Reviews Part End-->
+                            <!--
+                                  |--------------------------------------------------------------------------
+                                  | Related Product Start
+                                  |--------------------------------------------------------------------------
+                                  -->
+                            <div class="col-xl-2 col-md-3 col-12 left-padding">
+                                <div class="related-products">
+                                    <h4>Alternative brand</h4>
+                                    <div class="row">
+                                        <!-- Product Item -->
+                                        <div class="col-md-12 col-6">
+                                            <div class="related-product-item">
+                                                <div class="related-product-img">
+                                                    <img src="assets/images/product-image/gulco2.webp" class="img-fluid" alt="" />
+                                                </div>
+                                                <div class="related-product-content">
+                                                    <h6>GlucoDr blood glucose monitoring systen</h6>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="product-price">
+                                                            <p>&#2547;1600</p>
+                                                            <p>
+                                                                <del>&#2547;1800</del>
+                                                                <span> &nbsp; -12%</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="cart">
+                                                            Add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Item -->
+                                        <div class="col-md-12 col-6">
+                                            <div class="related-product-item">
+                                                <div class="related-product-img">
+                                                    <img src="assets/images/product-image/gulco2.webp" class="img-fluid" alt="" />
+                                                </div>
+                                                <div class="related-product-content">
+                                                    <h6>GlucoDr blood glucose monitoring systen</h6>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="product-price">
+                                                            <p>&#2547;1600</p>
+                                                            <p>
+                                                                <del>&#2547;1800</del>
+                                                                <span> &nbsp; -12%</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="cart">
+                                                            Add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Item -->
+                                        <div class="col-md-12 col-6">
+                                            <div class="related-product-item">
+                                                <div class="related-product-img">
+                                                    <img src="assets/images/product-image/gulco2.webp" class="img-fluid" alt="" />
+                                                </div>
+                                                <div class="related-product-content">
+                                                    <h6>GlucoDr blood glucose monitoring systen</h6>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="product-price">
+                                                            <p>&#2547;1600</p>
+                                                            <p>
+                                                                <del>&#2547;1800</del>
+                                                                <span> &nbsp; -12%</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="stock-out">
+                                                            Stock-out
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Item -->
+                                        <div class="col-md-12 col-6">
+                                            <div class="related-product-item">
+                                                <div class="related-product-img">
+                                                    <img src="assets/images/product-image/gulco2.webp" class="img-fluid" alt="" />
+                                                </div>
+                                                <div class="related-product-content">
+                                                    <h6>GlucoDr blood glucose monitoring systen</h6>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div class="product-price">
+                                                            <p>&#2547;1600</p>
+                                                            <p>
+                                                                <del>&#2547;1800</del>
+                                                                <span> &nbsp; -12%</span>
+                                                            </p>
+                                                        </div>
+                                                        <a href="#" class="cart">
+                                                            Add to cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Product Item -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                              |--------------------------------------------------------------------------
+                              | Related Product End
+                              |--------------------------------------------------------------------------
+                              -->
+                        </div>
+                    </div>
+                    <!-- disclaimer start -->
+                    <div class="disclaimer_section">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="inner_disclamier p-3">
+                                    <h5 class="disclaimer_title p-0 mb-2"><i class="far fa-sticky-note"></i> <span>Disclaimer</span></h5>
+                                    <p class="disclaimer_content">
+                                        The information provided herein is accurate, updated and complete as per the best practices of the Company. Please note that this information should not be treated as a replacement for physical
+                                        medical consultation or advice. We do not guarantee the accuracy and the completeness of the information so provided. The absence of any information and/or warning to any drug shall not be
+                                        considered and assumed as an implied assurance of the Company. We do not take any responsibility for the consequences arising out of the aforementioned information and strongly recommend you for a
+                                        physical consultation in case of any queries or doubts.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- disclaimer end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+    <!-- footer start-->
+    <footer class="footer">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <img class="w-50" src="./assets/images/logo/logo_dark.png" alt="" />
+                    <p>
+                        MCARE is an online healthcare platform, established by professionals with over 10 years experience in the field of education, training, IT business with local & global companies, providing an affordable,
+                        hassle-free experience for all your health needs.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Return and Refund Policy</a></li>
+                    </ul>
+                    <h3 class="footer_header mt-3">Social Links</h3>
+                    <ul class="social-link">
+                        <li class="twitter">
+                            <a href="https://twitter.com/mcareonline" data-toggle="tooltip" target="_blank" title="" data-original-title="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://www.linkedin.com/company/mcareonline" data-toggle="tooltip" target="_blank" title="" data-original-title="Linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/McareOnline" data-toggle="tooltip" target="_blank" title="" data-original-title="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/channel/UCy04iMG9zqelk0sAUfpRknw" data-toggle="tooltip" target="_blank" title="" data-original-title="Youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com/mcare_online/" data-toggle="tooltip" target="_blank" title="" data-original-title="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">USEFUL LINKS</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Medicines</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">CONTACT US</h3>
+                    <ul>
+                        <li>
+                            <a href="#"> <strong>ADDRESS:</strong> Wasi Tower(13th Floor), 572/K, ECB Chattar, Matikata, Dhaka Cantonment, Dhaka-1206, Bangladesh</a>
+                        </li>
+                        <li>
+                            <a href="#"> <strong>PHONE: </strong> +880 18949 47373</a>
+                        </li>
+                        <li>
+                            <a href="#"> <strong>EMAIL: </strong> support@mcare.com.bd</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_footer">
+            <div class="row">
+                <div class="col-md-12 footer-copyright text-center">
+                    <p class="mb-0">Copyright 2022 © MCARE</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap js-->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+    function toggleSidebar() {
+        var element = document.getElementById("sidebar-wrapper");
+        element.classList.toggle("close_icon");
+    }
+
+    if (window.innerWidth < 991) {
+        const initialAddedClass = document.getElementById("sidebar-wrapper");
+        initialAddedClass.classList.add("close_icon");
+    }
+
+    const imgs = document.querySelectorAll(".img-select a");
+    const imgBtns = [...imgs];
+    let imgId = 1;
+
+    imgBtns.forEach((imgItem) => {
+        imgItem.addEventListener("click", (event) => {
+            event.preventDefault();
+            imgId = imgItem.dataset.id;
+            slideImage();
+        });
+    });
+
+    function slideImage() {
+        const displayWidth = document.querySelector(".img-showcase img:first-child").clientWidth;
+
+        document.querySelector(".img-showcase").style.transform = `translateX(${-(imgId - 1) * displayWidth}px)`;
+    }
+
+    window.addEventListener("resize", slideImage);
+    </script>
+    <script>
+    document.getElementById("showAll").style.display = "block";
+    document.getElementById("showless").style.display = "none";
+    document.getElementById("lOne").style.display = "none";
+    document.getElementById("lTwo").style.display = "none";
+
+    function showAll() {
+        document.getElementById("lOne").style.display = "block";
+        document.getElementById("lTwo").style.display = "block";
+        document.getElementById("showAll").style.display = "none";
+        document.getElementById("showless").style.display = "block";
+    }
+
+    function showLess() {
+        document.getElementById("lOne").style.display = "none";
+        document.getElementById("lTwo").style.display = "none";
+        document.getElementById("showAll").style.display = "block";
+        document.getElementById("showless").style.display = "none";
+    }
+    </script>
+</body>
+
+</html>

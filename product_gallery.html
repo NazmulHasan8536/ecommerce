@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/logo/favicon-icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/logo/favicon-icon.png" type="image/x-icon" />
+    <title>Mcare</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/all.min.css" />
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.min.css" />
+    <!-- Style css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+
+    <!-- Custom css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/custom_responsive.css" />
+</head>
+
+<body>
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page Header Start-->
+        <div class="row">
+            <div class="col-12">
+                <div class="page-header">
+                    <div class="header-wrapper row align-items-center m-0 justify-content-between">
+                        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                            <div class="header-logo-wrapper p-0">
+                                <div class="logo" style="width: 150px;">
+                                    <img class="img-fluid" src="assets/images/logo/logo.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-6">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <g>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M11.2753 2.71436C16.0029 2.71436 19.8363 6.54674 19.8363 11.2753C19.8363 16.0039 16.0029 19.8363 11.2753 19.8363C6.54674 19.8363 2.71436 16.0039 2.71436 11.2753C2.71436 6.54674 6.54674 2.71436 11.2753 2.71436Z"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19.8987 18.4878C20.6778 18.4878 21.3092 19.1202 21.3092 19.8983C21.3092 20.6783 20.6778 21.3097 19.8987 21.3097C19.1197 21.3097 18.4873 20.6783 18.4873 19.8983C18.4873 19.1202 19.1197 18.4878 19.8987 18.4878Z"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <input class="form-control" type="text" placeholder="Search here.." aria-label="search"
+                                    aria-describedby="basic-addon1" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-3">
+                            <div class="nav-right right-header p-0">
+                                <ul class="nav-menus">
+                                    <li class="cart-nav">
+                                        <div class="toggle-sidebar" onclick="toggleSidebar()">
+                                            <div class="status_toggle sidebar-toggle d-flex">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <g>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M21.0003 6.6738C21.0003 8.7024 19.3551 10.3476 17.3265 10.3476C15.2979 10.3476 13.6536 8.7024 13.6536 6.6738C13.6536 4.6452 15.2979 3 17.3265 3C19.3551 3 21.0003 4.6452 21.0003 6.6738Z"
+                                                                stroke="#130F26" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M10.3467 6.6738C10.3467 8.7024 8.7024 10.3476 6.6729 10.3476C4.6452 10.3476 3 8.7024 3 6.6738C3 4.6452 4.6452 3 6.6729 3C8.7024 3 10.3467 4.6452 10.3467 6.6738Z"
+                                                                stroke="#130F26" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M21.0003 17.2619C21.0003 19.2905 19.3551 20.9348 17.3265 20.9348C15.2979 20.9348 13.6536 19.2905 13.6536 17.2619C13.6536 15.2333 15.2979 13.5881 17.3265 13.5881C19.3551 13.5881 21.0003 15.2333 21.0003 17.2619Z"
+                                                                stroke="#130F26" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M10.3467 17.2619C10.3467 19.2905 8.7024 20.9348 6.6729 20.9348C4.6452 20.9348 3 19.2905 3 17.2619C3 15.2333 4.6452 13.5881 6.6729 13.5881C8.7024 13.5881 10.3467 15.2333 10.3467 17.2619Z"
+                                                                stroke="#130F26" stroke-width="1.5"
+                                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-nav">
+                                        <div class="deliverAddress">
+                                            <div>
+                                                <p class="mb-0">Hello, User</p>
+                                                <p class="mb-0">Mcare Cash: ৳0</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-nav">
+                                        <div class="deliverAddress">
+                                            <div>
+                                                <p class="mb-0">Refer</p>
+                                                <p class="mb-0">& Earn</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="cart-nav onhover-dropdown">
+                                        <div class="cart-box">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M5.52377 7C9.41427 5.74386 13.9724 5.45573 16 5.5C18.0276 5.54427 18.8831 6.2663 19.5 7.5C20.5 9.5 20.289 14.4881 18.5 16.0871C16.712 17.6861 9.33015 17.8381 6.87015 16.0871C4.27115 14.2361 5.629 9.192 5.544 5.743C5.595 3.813 3.5 3.5 3.5 3.5"
+                                                            stroke="#130F26" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round"></path>
+                                                        <path d="M13 10.5H15.773" stroke="#130F26" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M7.26399 20.1274C7.56399 20.1274 7.80799 20.3714 7.80799 20.6714C7.80799 20.9724 7.56399 21.2164 7.26399 21.2164C6.96299 21.2164 6.71899 20.9724 6.71899 20.6714C6.71899 20.3714 6.96299 20.1274 7.26399 20.1274Z"
+                                                            fill="#130F26" stroke="#130F26" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M17.5954 20.1274C17.8964 20.1274 18.1404 20.3714 18.1404 20.6714C18.1404 20.9724 17.8964 21.2164 17.5954 21.2164C17.2954 21.2164 17.0514 20.9724 17.0514 20.6714C17.0514 20.3714 17.2954 20.1274 17.5954 20.1274Z"
+                                                            fill="#130F26" stroke="#130F26" stroke-width="1.5"
+                                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <span class="badge rounded-pill badge-primary">2</span>
+                                        </div>
+
+                                        <div class="cart-dropdown onhover-show-div">
+                                            <div class="dropdown-title">
+                                                <h3>Cart</h3>
+                                                <a class="f-right" href="#">
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </a>
+                                            </div>
+                                            <ul class="custom-scrollbar">
+                                                <li>
+                                                    <div class="media">
+                                                        <img class="img-fluid b-r-5 me-3 img-50"
+                                                            src="assets/images/banner-1.jpg" alt="" />
+                                                        <div class="media-body">
+                                                            <h5><a href="product.html">Black shirt with jecket</a></h5>
+                                                            <p class="f-w-700">$500</p>
+                                                            <div class="cart-quantity">
+                                                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                                                <input class="count" type="text" name="qty"
+                                                                    value="3" /><span class="minus"><i
+                                                                        class="fa fa-minus"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="close-circle">
+                                                            <a href="#">
+                                                                <i class="me-1" data-feather="edit"></i>
+                                                            </a>
+                                                            <a href="#">
+                                                                <i data-feather="trash-2"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="media">
+                                                        <img class="img-fluid b-r-5 me-3 img-50"
+                                                            src="assets/images/product-4.png" alt="" />
+                                                        <div class="media-body">
+                                                            <h5><a href="product.html">Yellow white shirt.</a></h5>
+                                                            <p class="f-w-700">$500</p>
+                                                            <div class="cart-quantity">
+                                                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                                                <input class="count" type="text" name="qty"
+                                                                    value="3" /><span class="minus"><i
+                                                                        class="fa fa-minus"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="close-circle">
+                                                            <a href="#"><i class="me-1" data-feather="edit"></i></a><a
+                                                                href="#"><i data-feather="trash-2"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="media">
+                                                        <img class="img-fluid b-r-5 me-3 img-50"
+                                                            src="assets/images/product-6.jpg" alt="" />
+                                                        <div class="media-body">
+                                                            <h5><a href="product.html">Nike Black shoes !</a></h5>
+                                                            <p class="f-w-700">$500</p>
+                                                            <div class="cart-quantity">
+                                                                <span class="plus"><i class="fa fa-plus"></i></span>
+                                                                <input class="count" type="text" name="qty"
+                                                                    value="3" /><span class="minus"><i
+                                                                        class="fa fa-minus"></i></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="close-circle">
+                                                            <a href="#"><i class="me-1" data-feather="edit"></i></a><a
+                                                                href="#"><i data-feather="trash-2"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="order-total">
+                                                    <h4 class="mb-0 f-w-700">Total : <span>$100.00</span></h4>
+                                                    <a class="btn btn-primary view-checkout"
+                                                        href="checkout.html">Checkout</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-header">
+                        <div class="toggle-sidebar" onclick="toggleSidebar()">
+                            <div class="status_toggle sidebar-toggle d-flex">
+                                <i class="fa-solid fa-bars"></i>
+                                <span>Categories</span>
+                            </div>
+                        </div>
+                        <div class="call_to_order">
+                            <a class="" href="Tel:01894947373">
+                                <i class="fa-solid fa-phone"></i>
+                                Call To Order
+                            </a>
+                            <a class="" href="#">
+                                <i class="fa-solid fa-heart"></i>
+                                Healthcare Product
+                            </a>
+                        </div>
+                        <div class="quick_order">
+                            <span>To quick order</span>
+                            <span class="">
+                                <i class="fa-solid fa-file-prescription"></i>
+                                Upload Prescription
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Ends-->
+
+        <!-- Page Body Start-->
+        <div class="page-body-wrapper">
+            <!-- Page Sidebar Start-->
+            <div id="sidebar-wrapper" class="sidebar-wrapper">
+                <nav class="sidebar-main">
+                    <div id="sidebar-menu">
+                        <ul class="sidebar-links" id="simple-bar">
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-virus-covid"></i>
+                                    <span>Covid-19 Special</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-venus"></i>
+                                    <span>Women Care</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-laptop-medical"></i>
+                                    <span>Devices</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-staff-aesculapius"></i>
+                                    <span>Sexual Wellness</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-mortar-pestle"></i>
+                                    <span>Herbal and Homeopathy</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-person-breastfeeding"></i>
+                                    <span>Baby & Mom care</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="#">
+                                    <i class="fa-solid fa-mug-saucer"></i>
+                                    <span>Nutrition and drinks</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Page Sidebar Ends-->
+
+            <div class="page-body">
+                <!-- category Start -->
+                <div id="category">
+                    <div class="container-fluid category-slider">
+                        <div class="category-arrow">
+                            <a class="right" rel="alternate" href="#" hreflang="en-BD">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                            <a class="left" rel="alternate" href="#" hreflang="en-BD">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="row category-slider-row">
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/covid19.png"
+                                        alt="Covid-19 Special" title="Covid-19 Special" />
+                                    <p class="category-item-title">Covid-19 Special</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/women.png" alt="Women Care"
+                                        title="Women Care" />
+                                    <p class="category-item-title">Women Care</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/medical_devices.png"
+                                        alt="Devices" title="Devices" />
+                                    <p class="category-item-title">Devices</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/sexual.png"
+                                        alt="Sexual Wellness" title="Sexual Wellness" />
+                                    <p class="category-item-title">Sexual Wellness</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/harbal.png"
+                                        alt="Herbal and Homeopathy" title="Herbal and Homeopathy" />
+                                    <p class="category-item-title">Herbal and Homeopathy</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/baby&mom.png"
+                                        alt="Baby & Mom care" title="Baby & Mom care" />
+                                    <p class="category-item-title">Baby & Mom care</p>
+                                </a>
+                            </div>
+                            <div class="category-item">
+                                <a rel="alternate" href="#" hreflang="en-BD">
+                                    <img class="mx-auto d-block" src="assets/images/category/energy-drink.png"
+                                        alt="Nutrition and drinks" title="Nutrition and drinks" />
+                                    <p class="category-item-title">Nutrition and drinks</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- category End -->
+
+                <!-- gallery Start -->
+                <div id="gallery">
+                    <div class="section_padding">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <img class="w-100" src="assets/images/banner/feature_product-bg.png" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="row title-lg">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-none d-sm-none d-md-none d-lg-block">
+                                <div class="headline shadow-sm">
+                                    <div class="left">
+                                        <span class="text">Electronics & Gadgets</span>
+                                        <span class="count"><span class="count-amount">250</span> items
+                                            found</span>
+                                    </div>
+                                    <div class="dropdown">
+                                        <select class="sort" name="" id="">
+                                            <option value="">Price: Low to High</option>
+                                            <option value="">Price: High to Low</option>
+                                            <option value="">Latest First</option>
+                                            <option value="">Oldest First</option>
+                                        </select>
+                                        <span class="arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row title-mb">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-block d-sm-block d-md-block d-lg-none">
+                                <div class="headline shadow-sm">
+                                    <a class="link" rel="alternate" href="#" hreflang="en-BD"><i
+                                            class="fa fa-long-arrow-left" aria-hidden="true"></i> </a>
+                                    <span class="text">Electronics & Gadgets</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <!-- <div class="col col-sm col-md col-lg-2 d-none d-sm-none d-md-none d-lg-block">
+                                <div class="filter_lg">
+                                    <div class="sub_category">
+                                        <h5 class="main_title">Sub-Categories</h5>
+                                        <div class="list">
+                                            <form>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input id="sub_category-1" type="checkbox" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <label for="sub_category-1">Mobile & Gadgets</label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input id="sub_category-2" type="checkbox" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <label for="sub_category-2">Computer Accessories</label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input id="sub_category-3" type="checkbox" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <label for="sub_category-3">Mobile Accessories</label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input id="sub_category-4" type="checkbox" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <label for="sub_category-4">Gaming Components</label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input id="sub_category-5" type="checkbox" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <label for="sub_category-5">Computers & Laptops </label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input id="sub_category-6" type="checkbox" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <label for="sub_category-6">Cameras </label>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text">
+                                                            <input id="sub_category-7" type="checkbox" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                        <label for="sub_category-7">Security & Survaillance </label>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="filters">
+                                        <h5 class="main_title">Filters</h5>
+                                        <div class="by_brand">
+                                            <h6 class="title">Brand</h6>
+                                            <div class="list">
+                                                <form>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="brand-1" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="brand-1">Samsung</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="brand-2" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="brand-2">Oppo</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="brand-3" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="brand-3">Xiaomi</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="brand-4" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="brand-4">Nokia</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="brand-5" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="brand-5">Vivo</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="brand-6" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="brand-6">Oneplus</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text">
+                                                                    <input id="brand-7" type="checkbox" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="input-group-append">
+                                                                <label for="brand-7">Huawei</label>
+                                                            </div>
+                                                        </div>
+                                                    </ul>
+                                                    <span>View More +</span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="by_merchant">
+                                            <h6 class="title">Merchant</h6>
+                                            <div class="list">
+                                                <form>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="merchant-1" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="merchant-1">SPORTS ONE</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="merchant-2" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="merchant-2">Al Madina Enterprise</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="merchant-3" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="merchant-3">Cotton Craft</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="merchant-4" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="merchant-4">Bikers Zone</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="merchant-5" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="merchant-5">Rayyan's Point</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
+                                                                    <div class="input-group-text">
+                                                                        <input id="merchant-6" type="checkbox" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="input-group-append">
+                                                                    <label for="merchant-6">Accesories Source BD</label>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text">
+                                                                    <input id="merchant-7" type="checkbox" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="input-group-append">
+                                                                <label for="merchant-7">SA Fashion World</label>
+                                                            </div>
+                                                        </div>
+                                                    </ul>
+                                                    <span>View More +</span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="by_price">
+                                            <h6 class="title">Price</h6>
+                                            <div class="range">
+                                                <div class="dropdown">
+                                                    <select class="sort" name="" id="">
+                                                        <option value="">Min</option>
+                                                        <option value="">500</option>
+                                                        <option value="">1000</option>
+                                                        <option value="">1500</option>
+                                                        <option value="">2000</option>
+                                                    </select>
+                                                    <span class="arrow"></span>
+                                                </div>
+                                                <span>to</span>
+                                                <div class="dropdown">
+                                                    <select class="sort" name="" id="">
+                                                        <option value="">Max</option>
+                                                        <option value="">500</option>
+                                                        <option value="">1000</option>
+                                                        <option value="">1500</option>
+                                                        <option value="">2000</option>
+                                                    </select>
+                                                    <span class="arrow"></span>
+                                                </div>
+                                            </div>
+                                            <div class="slider"></div>
+                                        </div>
+                                        <div class="by_discount">
+                                            <h6 class="title">Discounts</h6>
+                                            <div class="list">
+                                                <form>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <input id="discount_type-1" type="checkbox" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group-append">
+                                                            <label for="discount_type-1">Discounted Items</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <input id="discount_type-2" type="checkbox" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group-append">
+                                                            <label for="discount_type-2">Non - Discounted Items</label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="col col-sm-12 col-md-12 col-lg-12 gallery-detail">
+                                <div class="row gallery">
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-2">
+                                        <div class="productCard">
+                                            <div class="productImage">
+                                                <img src="https://cdn1.arogga.com/eyJidWNrZXQiOiJhcm9nZ2EiLCJrZXkiOiJtZWRpY2luZVwvMzJcLzMyOTAwLURldHRvbC1IYW5kd2FzaC1BbG9lLUxpcXVpZC1SZWZpbGwtbm56cC5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJmaXQiOiJvdXRzaWRlIn19fQ=="
+                                                    class="productCard-img-top w-100" alt="..." />
+                                            </div>
+                                            <div class="productCard-body">
+                                                <div class="productDetails">
+                                                    <h5 class="productCard-title">Dettol Handwash Aloe Liqu...</h5>
+                                                    <div class="ProductDiscount">
+                                                        <span class="productDiscountPrice">৳ 120.00</span>
+                                                        <span class="discountPercent jss229">15% Off</span>
+                                                    </div>
+                                                    <p class="ProductPrice">৳ 12.00</p>
+
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-outline-primary d-grid">ADD TO CART</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- gallery End -->
+                <!-- Container-fluid starts-->
+            </div>
+        </div>
+    </div>
+    <!-- footer start-->
+    <footer class="footer">
+        <div class="top_footer">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <img class="w-50" src="./assets/images/logo/logo_dark.png" alt="" />
+
+                    <p>
+                        MCARE is an online healthcare platform, established by professionals with over 10 years
+                        experience in the field of education, training, IT business with local & global companies,
+                        providing an affordable,
+                        hassle-free experience for all your health needs.
+                    </p>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Return and Refund Policy</a></li>
+                    </ul>
+                    <h3 class="footer_header mt-3">Social Links</h3>
+                    <ul class="social-link">
+                        <li class="twitter">
+                            <a href="https://twitter.com/mcareonline" data-toggle="tooltip" target="_blank" title=""
+                                data-original-title="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="twitter">
+                            <a href="https://www.linkedin.com/company/mcareonline" data-toggle="tooltip" target="_blank"
+                                title="" data-original-title="Linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+
+                        <li class="facebook">
+                            <a href="https://www.facebook.com/McareOnline" data-toggle="tooltip" target="_blank"
+                                title="" data-original-title="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a href="https://www.youtube.com/channel/UCy04iMG9zqelk0sAUfpRknw" data-toggle="tooltip"
+                                target="_blank" title="" data-original-title="Youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="https://www.instagram.com/mcare_online/" data-toggle="tooltip" target="_blank"
+                                title="" data-original-title="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">USEFUL LINKS</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Medicines</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <h3 class="footer_header">CONTACT US</h3>
+                    <ul>
+                        <li>
+                            <a href="#"> <strong>ADDRESS:</strong> Wasi Tower(13th Floor), 572/K, ECB Chattar, Matikata,
+                                Dhaka Cantonment, Dhaka-1206, Bangladesh</a>
+                        </li>
+                        <li>
+                            <a href="#"> <strong>PHONE: </strong> +880 18949 47373</a>
+                        </li>
+                        <li>
+                            <a href="#"> <strong>EMAIL: </strong> support@mcare.com.bd</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="row">
+                <div class="col-md-12 footer-copyright text-center">
+                    <p class="mb-0">Copyright 2022 © MCARE</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap js-->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script>
+        function toggleSidebar() {
+            var element = document.getElementById("sidebar-wrapper");
+            element.classList.toggle("close_icon");
+        }
+
+        if (window.innerWidth < 991) {
+            const initialAddedClass = document.getElementById("sidebar-wrapper");
+            initialAddedClass.classList.add("close_icon");
+        }
+    </script>
+</body>
+
+</html>

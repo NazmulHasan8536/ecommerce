@@ -1,0 +1,169 @@
+@media only screen and (max-width: 1665px) and (min-width: 1566px) {
+    /* .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+        top: 92px;
+    } */
+}
+
+@media only screen and (max-width: 1566px) and (min-width: 1366px) {
+    .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+        top: 92px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1200px) {
+    .page-wrapper.compact-wrapper .page-header .header-wrapper .nav-right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+        top: 110px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 1101px) {
+    .page-wrapper.compact-wrapper .page-header .header-wrapper .nav-right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+        top: 76px;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 992px) {
+    .page-wrapper.compact-wrapper .page-header .header-wrapper .nav-right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+        top: 92px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .page-wrapper .page-header .header-wrapper .nav-right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100.98px) {
+    .footer {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .page-wrapper.compact-wrapper .page-header .header-wrapper .header-logo-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        margin-left: 0;
+    }
+
+    .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+        top: 130px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .page-wrapper .page-header .header-wrapper .nav-right>ul {
+        justify-content: center;
+        border-bottom: 1px solid #ced4da;
+    }
+
+    .bottom-header {
+        display: none;
+    }
+
+    .deliverAddress {
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-right: 1px solid #ced4da;
+        margin: 0;
+    }
+
+    .page-wrapper .page-header .header-wrapper .nav-right ul li svg {
+        width: 22px;
+    }
+
+    .nav-right .nav-menus .toggle-sidebar {
+        display: block !important;
+    }
+
+    .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+        top: 115px;
+    }
+
+
+
+    .page-wrapper.compact-wrapper .page-body-wrapper .page-body {
+        margin-top: 150px;
+    }
+
+    #category {
+        display: block;
+    }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 575.98px) {
+    .page-wrapper .page-header .header-wrapper .nav-right>ul {
+        top: 58px;
+        justify-content: center;
+    }
+
+    .page-wrapper .page-header .header-wrapper .nav-right>ul {
+        justify-content: center;
+    }
+
+    .page-wrapper .page-header .header-wrapper .nav-right ul li svg {
+        width: 22px;
+    }
+
+    .page-wrapper.compact-wrapper .page-header .header-wrapper .toggle-sidebar {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        padding-right: 0;
+        margin-right: 0;
+        border-right: 1px solid #ced4da;
+        padding: 12px 10px 12px 0px;
+    }
+
+    .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper {
+        top: 0;
+        padding-top: 160px;
+    }
+
+    .page-wrapper .page-header .header-wrapper {
+        padding: 12px 0px !important;
+        border-bottom: 1px solid #f4f6fd;
+    }
+
+    .page-wrapper.compact-wrapper .page-body-wrapper .page-body {
+        margin-top: 160px;
+    }
+}
